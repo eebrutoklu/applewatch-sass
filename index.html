@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Watch - SCSS</title>
+    <!-- SASS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#home" class="nav__logo"
+          ><img style="width: 30px" src="./images/logowhite.png" alt=""
+        /></a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#favorite" class="nav__link">Favorites</a>
+            </li>
+            <li class="nav__item">
+              <a href="#model" class="nav__link">Models</a>
+            </li>
+          </ul>
+          <!-- close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="bi bi-x"></i>
+          </div>
+        </div>
+        <!-- toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bi bi-list"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main class="main">
+      <!-- * home start -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <h1 class="home__apple">APPLE</h1>
+            <img src="./images/about1.png" alt="image" class="home__img" />
+            <h1 class="home__title">
+              <span>W</span>
+              <span>A</span>
+              <span>T</span>
+              <span>C</span>
+              <span>H</span>
+            </h1>
+            <div class="home__tooltip">
+              <img
+                src="images/tooltip-right.svg"
+                alt=""
+                class="home__tooltip-img"
+              />
+              <span class="home__tooltip-text">$399</span>
+            </div>
+          </div>
+
+          <a href="#" class="home__button button"
+            >Buy Now <i class="bi bi-play-circle-fill"></i
+          ></a>
+          <div class="home__social">
+            <span class="home__social-text">Follow Us</span>
+            <div class="home__social-links">
+              <a href="" class="home__social-link">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="" class="home__social-link">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="" class="home__social-link">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- * home end -->
+
+      <!-- * about start -->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title">More About Us</h2>
+            <p class="about__description">
+              Easy ways to stay connected. Motivating fitness metrics.
+              Innovative health and safety features.And now with carbon neutral
+              case and band combinations.
+            </p>
+            <a href="#" class="button"
+              >Know More <i class="bi bi-info-circle-fill"></i>
+            </a>
+          </div>
+          <div>
+            <img
+              src="./images/ab-img1.png"
+              class="about__img"
+              alt="about-img"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- * about end -->
+      <!-- * favorites start -->
+      <section class="favorite section" id="favorite">
+        <h2 class="section__title">Choose Your Favorites</h2>
+        <div class="favorite__container">
+          <div class="favorite__card">
+            <article class="favorite__article">
+              <img src="./images/w1.png" alt="img" class="favorite__img" />
+              <span class="favorite__model">Pinko Model</span>
+            </article>
+            <article class="favorite__article">
+              <img src="./images/w2.png" alt="img" class="favorite__img" />
+              <span class="favorite__model">White Model</span>
+            </article>
+            <article class="favorite__article">
+              <img src="./images/w3.png" alt="img" class="favorite__img" />
+              <span class="favorite__model">Silver Model</span>
+            </article>
+            <article class="favorite__article">
+              <img src="./images/w4.png" alt="img" class="favorite__img" />
+              <span class="favorite__model">Night Model</span>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- * favorites end -->
+
+      <!-- *model start -->
+      <section class="model section" id="model">
+        <h2 class="section__title">Model Specification</h2>
+        <div class="model__container container grid">
+          <div class="model__content">
+            <img src="./images/w1.png" alt="" class="model__img" />
+            <div class="model__tooltip model__tooltip-1">
+              <img
+                src="./images/tooltip-right.svg"
+                alt=""
+                class="model__tooltip-img"
+              />
+              <span class="model__tooltip-text">Fast Charge</span>
+            </div>
+            <div class="model__tooltip model__tooltip-2">
+              <img
+                src="./images/tooltip-right.svg"
+                alt=""
+                class="model__tooltip-img"
+              />
+              <span class="model__tooltip-text">Easy Adjustment</span>
+            </div>
+            <div class="model__tooltip model__tooltip-3">
+              <img
+                src="./images/tooltip-right.svg"
+                alt=""
+                class="model__tooltip-img"
+              />
+              <span class="model__tooltip-text">Best Confort</span>
+            </div>
+            <div class="model__tooltip model__tooltip-4">
+              <img
+                src="./images/tooltip-right.svg"
+                alt=""
+                class="model__tooltip-img"
+              />
+              <span class="model__tooltip-text">Custom Cordon</span>
+            </div>
+          </div>
+          <a href="#" class="model__button button">
+            Buy Now <i class="bi-play-circle-fill"></i
+          ></a>
+        </div>
+      </section>
+      <!-- *model end -->
+      <!-- *sponsor start -->
+      <section class="sponsor section" id="sponsor">
+        <div class="container grid sponsor__container">
+          <img src="./images/sponsor-1.png" class="sponsor__img" alt="" />
+          <img src="./images/sponsor-2.png" class="sponsor__img" alt="" /><img
+            src="./images/sponsor-3.png"
+            class="sponsor__img"
+            alt=""
+          /><img src="./images/sponsor-4.png" class="sponsor__img" alt="" />
+        </div>
+      </section>
+      <!-- *sponsor end -->
+
+      <!-- * footer start -->
+      <footer class="footer">
+        <div class="footer__container container grid">
+          <div>
+            <a href="#home" class="footer__logo">APPLE</a>
+          </div>
+          <div class="footer__data grid">
+            <div>
+              <h3 class="footer__title">Products</h3>
+              <ul class="footer_links">
+                <li>
+                  <a href="" class="footer__link">Phone</a>
+                </li>
+                <li>
+                  <a href="" class="footer__link">Mac</a>
+                </li>
+                <li>
+                  <a href="" class="footer__link">Ipad</a>
+                </li>
+                <li>
+                  <a href="" class="footer__link">İmac</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="footer__title">Support</h3>
+              <ul class="footer_links">
+                <li>
+                  <a href="" class="footer__link">Product Help</a>
+                </li>
+                <li>
+                  <a href="" class="footer__link">Collaborations</a>
+                </li>
+                <li>
+                  <a href="" class="footer__link">Thanks</a>
+                </li>
+                <li>
+                  <a href="" class="footer__link">Help</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__group">
+              <form class="footer__form">
+                <input type="text" placeholder="email" />
+                <button class="footer__button button">
+                  Subscribe <i class="bi bi-send-fill"> </i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="footer__social">
+            <div class="footer__social-links">
+              <a href="" class="footer__social-link">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="" class="footer__social-link">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="" class="footer__social-link">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <span class="footer__copy">&#169; All Right Reserved</span>
+        </div>
+      </footer>
+      <!-- * footer end -->
+    </main>
+    <!-- main end -->
+
+    <!-- javascript -->
+    <script src="main.js"></script>
+  </body>
+</html>

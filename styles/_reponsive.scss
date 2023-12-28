@@ -1,0 +1,184 @@
+@media screen and (min-width: 820px) {
+  .container {
+    margin-inline: auto;
+  }
+  .section {
+    padding: 112px 32px;
+  }
+  .section__title {
+    font-size: var(--h1-font-size);
+  }
+
+  .nav__list {
+    flex-direction: row;
+    column-gap: 72px;
+  }
+  .home {
+    &container {
+      position: relative;
+    }
+    &__img {
+      width: 700px;
+    }
+    &__title {
+      font-size: var(--biggest-font-size);
+    }
+    &__tooltip {
+      right: 180px;
+      top: 55px;
+    }
+    &__tooltip-img {
+      width: initial;
+    }
+    &__tooltip-text {
+      font-size: var(--normal-font-size);
+      transform: translate(82px, -52px);
+    }
+    &__social-text {
+      font-size: var(--normal-font-size);
+    }
+    &__social-links {
+      row-gap: 16px;
+      transform: translate(10px, 15px);
+    }
+    &__social-link {
+      font-size: 22px;
+    }
+  }
+  .about {
+    &__container {
+      grid-template-columns: 300px 370px;
+      align-items: center;
+      column-gap: 80px;
+    }
+    &__description {
+      margin-bottom: 16px;
+    }
+  }
+  .favorite {
+    &__card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 30px;
+      cursor: pointer;
+    }
+  }
+  .favorite {
+    &__img {
+      width: 220px;
+    }
+  }
+  .model {
+    &__img {
+      width: 360px;
+    }
+    &__tooltip {
+      &-img {
+        width: initial;
+      }
+      &-text {
+        transform: translate(82px, -50px);
+        font-size: var(--small-font-size);
+      }
+      &-2 {
+        top: 110px;
+        left: 260px;
+      }
+      &-4 {
+        top: 220px;
+        right: 260px;
+        transform: scaleX(-1);
+      }
+    }
+  }
+  .model__tooltip-4 .model__tooltip-text {
+    transform: translate(82px, -50px) scaleX(-1);
+  }
+  .sponsor__container {
+    grid-template-columns: repeat(4, max-content);
+  }
+
+  .footer {
+    &__group {
+      position: absolute;
+      left: 60%;
+    }
+  }
+}
+
+// 1150
+@media screen and (min-width: 1150px) {
+  .container {
+    margin-inline: auto;
+  }
+  .section {
+    padding: 112px 32px;
+  }
+  .section__title {
+    font-size: var(--h1-font-size);
+  }
+  .nav__list {
+    flex-direction: row;
+    column-gap: 72px;
+  }
+  .home {
+    &__container {
+      position: relative;
+    }
+    &__img {
+      width: 850px;
+    }
+    &__title {
+      font-size: var(--biggest-font-size);
+    }
+    &__tooltip {
+      right: 180px;
+      top: 55px;
+    }
+    &__tooltip-img {
+      width: initial;
+    }
+    &__tooltip-text {
+      font-size: var(--normal-font-size);
+      transform: translate(82px, -52px);
+    }
+    &__social-text {
+      font-size: var(--normal-font-size);
+    }
+    &__social-link {
+      font-size: 24px;
+    }
+  }
+  .about {
+    &__container {
+      grid-template-columns: 500px 600px;
+      align-items: center;
+      column-gap: 80px;
+    }
+    &__description {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 819px) {
+  .nav__menu {
+    position: fixed; /* Sabit konumlandırma */
+    top: -100%; /* Ekranın üstünde başlangıçta gizli */
+    left: 0;
+    background-color: hsla(23, 12%, 4%, 0.2); /* Arka plan rengi */
+    width: 100%; /* Tam genişlik */
+    padding: 88px 72px; /* İç boşluklar */
+    backdrop-filter: blur(32px); /* Arkadaki içeriği bulanıklaştırır */
+    --webkit-backdrop-filter: blur(32px); /* Safari için */
+    transition: top 0.4s; /* Animasyon süresi */
+  }
+
+  .show-menu {
+    top: 0; /* Gösterilecek konumda olacak */
+  }
+
+  /* Diğer stillendirmeler buraya eklenebilir */
+}

@@ -1,0 +1,24 @@
+.button {
+  width: fit-content;
+  height: 40px;
+  margin: auto;
+  background: var(--gradient-color);
+  padding: 5px;
+  margin-top: 30px;
+  border-radius: 64px;
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  transition: box-shadow 0.4s;
+  i {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--text-color);
+  }
+  &:hover {
+    box-shadow: 0 0 32px hsla(34, 10%, 86%, 0.12);
+  }
+}

@@ -1,0 +1,49 @@
+.model {
+  &__container {
+    padding-top: 32px;
+    row-gap: 40px;
+  }
+  &__content {
+    position: relative;
+    justify-self: center;
+  }
+  &__img {
+    width: 280px;
+  }
+  &__tooltip {
+    position: absolute;
+    &-img {
+      width: 50px;
+    }
+    &-text {
+      padding: 4px 10px;
+      background: var(--gradient-color);
+      border-radius: 64px;
+      color: var(--white-color);
+      font-size: var(--smaller-font-size);
+      font-weight: var(--font-medium);
+      position: absolute;
+      transform: translate(50px, -40px);
+      white-space: nowrap;
+    }
+    &-1 {
+      top: 88px;
+      left: 60px;
+    }
+    &-2 {
+      top: 16px;
+      left: 160px;
+    }
+    &-3 {
+      bottom: 20px;
+      left: 156px;
+    }
+    &-4 {
+      bottom: 65px;
+      right: 180px;
+    }
+    &__button {
+      justify-self: center;
+    }
+  }
+}
